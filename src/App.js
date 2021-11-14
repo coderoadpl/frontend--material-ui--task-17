@@ -2,9 +2,13 @@ import React from 'react'
 
 import { Button } from '@mui/material'
 
+import { Logout as LogoutIcon } from '@mui/icons-material'
+
 export const App = () => {
   return (
     <div>
+      <LogoutIcon /> some text
+      <br />
       <Button>
         DEFAULT
       </Button>
@@ -18,6 +22,7 @@ export const App = () => {
       <Button
         variant={'contained'}
         color={'primary'}
+        startIcon={<LogoutIcon />}
       >
         CONTAINED PRIMARY
       </Button>
@@ -25,6 +30,7 @@ export const App = () => {
       <Button
         variant={'contained'}
         color={'secondary'}
+        endIcon={<LogoutIcon />}
       >
         CONTAINED SECONDARY
       </Button>
