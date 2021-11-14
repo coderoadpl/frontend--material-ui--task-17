@@ -7,24 +7,12 @@ import { Logout as LogoutIcon } from '@mui/icons-material'
 export const App = () => {
   return (
     <div>
-      <LogoutIcon /> some text
-      <br />
-      <Button>
-        DEFAULT
-      </Button>
-      <br />
-      <Button
-        variant={'text'}
-      >
-        TEXT
-      </Button>
-      <br />
       <Button
         variant={'contained'}
         color={'primary'}
         startIcon={<LogoutIcon />}
       >
-        CONTAINED PRIMARY
+        PRIMARY
       </Button>
       <br />
       <Button
@@ -32,14 +20,41 @@ export const App = () => {
         color={'secondary'}
         endIcon={<LogoutIcon />}
       >
-        CONTAINED SECONDARY
+        SECONDARY
       </Button>
       <br />
       <Button
-        variant={'outlined'}
+        variant={'contained'}
+        color={'info'}
+        endIcon={<LogoutIcon />}
       >
-        OUTLINED
+        INFO
       </Button>
+      <br />
+      <Button
+        variant={'contained'}
+        color={'warning'}
+        endIcon={<LogoutIcon />}
+      >
+        WARNING
+      </Button>
+      <br />
+      <Button
+        variant={'contained'}
+        color={'error'}
+        endIcon={<LogoutIcon />}
+      >
+        ERROR
+      </Button>
+      <br />
+      <Button
+        variant={'contained'}
+        color={'success'}
+        endIcon={<LogoutIcon />}
+      >
+        SUCCESS
+      </Button>
+      <br />
     </div>
   )
 }
