@@ -10,6 +10,7 @@ export const SystemButton = (props) => {
     className,
     iconColor,
     rippleColor,
+    sx,
     ...otherProps
   } = props
 
@@ -21,7 +22,8 @@ export const SystemButton = (props) => {
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        ...sx
       }}
       {...otherProps}
     >
@@ -47,7 +49,8 @@ export const SystemButton = (props) => {
 SystemButton.propTypes = {
   className: PropTypes.string,
   iconColor: PropTypes.string,
-  rippleColor: PropTypes.string
+  rippleColor: PropTypes.string,
+  sx: PropTypes.object
 }
 
 export default SystemButton

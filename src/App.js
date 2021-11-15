@@ -7,7 +7,9 @@ export const App = () => {
     <div>
 
       <SystemButton
-        className={'CUSTOM'}
+        sx={{
+          backgroundColor: (theme) => theme.palette.error.main
+        }}
         iconColor={'yellow'}
         rippleColor={'green'}
       />
