@@ -1,59 +1,91 @@
 import React from 'react'
 
-import { Button, Typography } from '@mui/material'
+import { Container, Grid, Button, Typography } from '@mui/material'
 
 import { Logout as LogoutIcon } from '@mui/icons-material'
 
 export const App = () => {
   return (
-    <div>
-      <Button
-        variant={'contained'}
-        color={'primary'}
-        startIcon={<LogoutIcon />}
+    <Container>
+      <Grid
+        container={true}
+        spacing={1}
       >
-        PRIMARY
-      </Button>
-      <br />
-      <Button
-        variant={'contained'}
-        color={'secondary'}
-        endIcon={<LogoutIcon />}
-      >
-        SECONDARY
-      </Button>
-      <br />
-      <Button
-        variant={'contained'}
-        color={'info'}
-        endIcon={<LogoutIcon />}
-      >
-        INFO
-      </Button>
-      <br />
-      <Button
-        variant={'contained'}
-        color={'warning'}
-        endIcon={<LogoutIcon />}
-      >
-        WARNING
-      </Button>
-      <br />
-      <Button
-        variant={'contained'}
-        color={'error'}
-        endIcon={<LogoutIcon />}
-      >
-        ERROR
-      </Button>
-      <br />
-      <Button
-        variant={'contained'}
-        color={'success'}
-        endIcon={<LogoutIcon />}
-      >
-        SUCCESS
-      </Button>
+        <Grid
+          container={true}
+          direction={'column'}
+          alignItems={'center'}
+          spacing={1}
+          item={true}
+          xs={12}
+          sm={6}
+        >
+          <Grid item={true}>
+            <Button
+              variant={'contained'}
+              color={'primary'}
+              startIcon={<LogoutIcon />}
+            >
+              PRIMARY
+            </Button>
+          </Grid>
+          <Grid item={true}>
+            <Button
+              variant={'contained'}
+              color={'secondary'}
+              endIcon={<LogoutIcon />}
+            >
+              SECONDARY
+            </Button>
+          </Grid>
+          <Grid item={true}>
+            <Button
+              variant={'contained'}
+              color={'info'}
+              endIcon={<LogoutIcon />}
+            >
+              INFO
+            </Button>
+          </Grid>
+        </Grid>
+        <Grid
+          container={true}
+          direction={'column'}
+          alignItems={'center'}
+          spacing={1}
+          item={true}
+          xs={12}
+          sm={6}
+        >
+          <Grid item={true}>
+            <Button
+              variant={'contained'}
+              color={'warning'}
+              endIcon={<LogoutIcon />}
+            >
+              WARNING
+            </Button>
+          </Grid>
+          <Grid item={true}>
+            <Button
+              variant={'contained'}
+              color={'error'}
+              endIcon={<LogoutIcon />}
+            >
+              ERROR
+            </Button>
+          </Grid>
+          <Grid item={true}>
+            <Button
+              variant={'contained'}
+              color={'success'}
+              endIcon={<LogoutIcon />}
+            >
+              SUCCESS
+            </Button>
+          </Grid>
+        </Grid>
+      </Grid>
       <br />
       <Typography
         variant={'coderoad'}
@@ -159,7 +191,7 @@ export const App = () => {
       >
         overline text
       </Typography>
-    </div>
+    </Container>
   )
 }
 
