@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 import { Box, Button } from '@mui/material'
 
+import { Delete as DeleteIcon } from '@mui/icons-material'
+
 export const SystemButton = (props) => {
   const {
     className,
@@ -25,8 +27,16 @@ export const SystemButton = (props) => {
     >
       <Button
         sx={{
-          width: 400
+          width: 400,
+          '& .MuiTouchRipple-rippleVisible': {
+            backgroundColor: 'red'
+          }
         }}
+        startIcon={
+          <DeleteIcon
+            sx={{ color: 'red' }}
+          />
+        }
       >
         CLICK ME
       </Button>
