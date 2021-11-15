@@ -6,7 +6,7 @@ import { Delete as DeleteIcon } from '@mui/icons-material'
 
 import { Button } from '@mui/material'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: '100vw',
     height: '100vh',
@@ -17,10 +17,10 @@ const useStyles = makeStyles(() => ({
   button: {
     width: 400,
     '& .MuiButton-startIcon': {
-      color: 'red'
+      color: theme.palette.error.main
     },
     '& .MuiTouchRipple-rippleVisible': {
-      backgroundColor: 'red'
+      backgroundColor: theme.palette.error.main
     }
   }
 }), { name: 'App' })
