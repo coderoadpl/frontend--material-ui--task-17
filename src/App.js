@@ -2,6 +2,8 @@ import React from 'react'
 
 import { makeStyles } from '@mui/styles'
 
+import { Delete as DeleteIcon } from '@mui/icons-material'
+
 import { Button } from '@mui/material'
 
 const useStyles = makeStyles(() => ({
@@ -13,7 +15,10 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center'
   },
   button: {
-    width: 400
+    width: 400,
+    '& .MuiButton-startIcon': {
+      color: 'red'
+    }
   }
 }), { name: 'App' })
 
@@ -29,6 +34,7 @@ export const App = () => {
 
       <Button
         className={classes.button}
+        startIcon={<DeleteIcon />}
       >
         CLICK ME
       </Button>
