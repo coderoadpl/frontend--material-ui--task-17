@@ -29,12 +29,12 @@ export const SystemButton = (props) => {
         sx={{
           width: 400,
           '& .MuiTouchRipple-rippleVisible': {
-            backgroundColor: 'red'
+            backgroundColor: rippleColor || ((theme) => theme.palette.error.main)
           }
         }}
         startIcon={
           <DeleteIcon
-            sx={{ color: 'red' }}
+            sx={{ color: iconColor || ((theme) => theme.palette.error.main) }}
           />
         }
       >
