@@ -18,6 +18,9 @@ const useStyles = makeStyles(() => ({
     width: 400,
     '& .MuiButton-startIcon': {
       color: 'red'
+    },
+    '& .MuiTouchRipple-rippleVisible': {
+      backgroundColor: 'red'
     }
   }
 }), { name: 'App' })
