@@ -1,12 +1,13 @@
 import React from 'react'
 
-import CustomButton from './components/CustomButton'
+import SystemButton from './components/SystemButton'
 
 export const App = () => {
   return (
     <div>
 
-      <CustomButton
+      <SystemButton
+        className={'CUSTOM'}
         iconColor={'yellow'}
         rippleColor={'green'}
       />
