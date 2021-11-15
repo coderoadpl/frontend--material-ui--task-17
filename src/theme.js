@@ -20,6 +20,15 @@ export const theme = createTheme({
     success: {
       main: '#2ecc71'
     }
+  },
+  typography: {
+    h1: {
+      fontSize: '4.5rem'
+    },
+    coderoad: {
+      fontSize: 18,
+      fontFamily: 'serif'
+    }
   }
 })
 

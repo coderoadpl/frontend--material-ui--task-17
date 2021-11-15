@@ -56,6 +56,13 @@ export const App = () => {
       </Button>
       <br />
       <Typography
+        variant={'coderoad'}
+        component={'div'}
+        gutterBottom={true}
+      >
+        Custom coderoad
+      </Typography>
+      <Typography
         variant={'h1'}
         component={'div'}
         gutterBottom={true}
