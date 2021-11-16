@@ -1,25 +1,14 @@
 import React from 'react'
 
-import { Box } from '@mui/material'
+import BlackSquare from './components/BlackSquare/BlackSquare'
 
 export const App = () => {
   return (
     <div>
 
-      <Box
-        sx={{
-          width: 100,
-          height: 100,
-          m: 2,
-          bgcolor: 'common.black',
-          color: 'common.white',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}
-      >
+      <BlackSquare>
         SQUARE
-      </Box>
+      </BlackSquare>
 
     </div>
   )
