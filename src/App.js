@@ -1,18 +1,25 @@
 import React from 'react'
 
-import SystemButton from './components/SystemButton'
+import { Box } from '@mui/material'
 
 export const App = () => {
   return (
     <div>
 
-      <SystemButton
+      <Box
         sx={{
-          backgroundColor: (theme) => theme.palette.error.main
+          width: 100,
+          height: 100,
+          m: 2,
+          bgcolor: 'common.black',
+          color: 'common.white',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
         }}
-        iconColor={'yellow'}
-        rippleColor={'green'}
-      />
+      >
+        SQUARE
+      </Box>
 
     </div>
   )
